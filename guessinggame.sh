@@ -14,10 +14,10 @@ function get_the_counts(){
 
 
 get_the_counts
-echo "${file_cnt}"
+#echo "${file_cnt}"
 
 let usr_input=-1
-
+echo "Make a guess on number of files in the current directory: "
 while [[ $usr_input -ne $file_cnt ]]
 do
     read usr_input
@@ -32,5 +32,6 @@ do
         else
             echo "the correct count is lesser"
         fi
+        echo "Guess again: "
     fi
 done
